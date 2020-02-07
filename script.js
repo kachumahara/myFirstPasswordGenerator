@@ -39,8 +39,8 @@ function generatePassword(options) {
 			password += getRandomValue(numbers);
 		}
 	}
-
-	return password;
+	// it gives password numbers user specified.
+	return password.slice(0, options.length);
 }
 
 function getRandomValue(str) {
